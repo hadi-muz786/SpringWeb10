@@ -3,6 +3,7 @@ package paccck4;
 public class ClassAdding {
 	private String name;
 	private String address;
+	private String email;
 
 	public String getName() {
 		return name;
