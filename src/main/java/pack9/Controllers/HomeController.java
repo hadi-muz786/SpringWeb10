@@ -26,7 +26,7 @@ public class HomeController {
 	}
 		
 		@RequestMapping(value = "home", method = RequestMethod.GET)
-		public ModelAndView resulHome 															() {
+		public ModelAndView resulHome() {
 			System.out.println("Hey this is my Home");
 
 			HouseRqo hr = homeserv.AllSrvice();
