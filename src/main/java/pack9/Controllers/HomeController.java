@@ -24,29 +24,21 @@ public class HomeController {
 
 		return mvn;
 	}
-		
-		@RequestMapping(value = "home", method = RequestMethod.GET)
-		public ModelAndView resulHome() {
-			System.out.println("Hey this is my Home");
 
-			HouseRqo hr = homeserv.AllSrvice();
-			System.out.println(hr.toString());
+	@RequestMapping(value = "home", method = RequestMethod.GET)
+	public ModelAndView resulHome() {
+		System.out.println("Hey this is my Home");
+		System.out.println("And im going");
+		
+		HouseRqo hr = homeserv.AllSrvice();
+		System.out.println(hr.toString());
 
-			ModelAndView mvn = new ModelAndView("home");
-			mvn.addObject("bj", hr);
-			mvn.addObject("name", "Abdul HDMR");
+		ModelAndView mvn = new ModelAndView("home");
+		mvn.addObject("bj", hr);
+		mvn.addObject("name", "Abdul HDMR");
 
-			return mvn;
-			
-			
-			
-		
-		
-		
-		
-		
-		
-		
+		return mvn;
+
 	}
 
 	public HomeService getHomeserv() {
